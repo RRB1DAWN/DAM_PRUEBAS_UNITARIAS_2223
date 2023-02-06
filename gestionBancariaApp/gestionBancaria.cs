@@ -36,8 +36,8 @@ public class gestionBancaria
         {
             if (cantidad > 0 && saldo > cantidad)
             {
-                saldo -= cantidad;
-                
+                saldo += cantidad;
+
             }
             else
                 mostrarError(ERR_SALDO_INSUFICIENTE);
@@ -56,7 +56,7 @@ public class gestionBancaria
         else
         {
             if (cantidad > 0)
-                saldo -= cantidad;
+                saldo += cantidad;
         }
       
     }
